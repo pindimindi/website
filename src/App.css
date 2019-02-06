@@ -1,32 +1,83 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+body {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 20px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  background-image: url(./homepage.png);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 35px;
+}
+
+.heading-primary {
+  color: #26b7ca;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.text-box {
+  position: absolute;
+  top: 30%;
+  left: 40px;
+}
+
+.btnAction {
+  text-transform: uppercase;
+  padding: 13px 45px;
+  background-color: #ff7d5c;
   color: white;
+  border-radius: 25px;
+  border: none;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.btnAction:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnAction:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btnAction:visited {
+  transition: all 0.2s;
+  outline: none;
+}
+
+.btnAction:focus {
+  outline: 0;
 }
