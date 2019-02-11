@@ -5,60 +5,82 @@
 }
 
 body {
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Barlow";
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #777;
+  color: black;
+  background-color: #ffffff;
   padding: 20px;
 }
 
 .App-header {
-  height: 100vh;
-  background-image: url(./homepage.png);
-  background-size: cover;
-  background-position: top;
+  height: 90vh;
+  width: 100%;
+  /* display: flex;
+  flex-direction: row; */
+  /* justify-content: space-evenly; */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(./images/graph-background.jpg);
+  /* background-color: white; */
+  background-size: 100% 100%;
+  /* background-repeat: no-repeat; */
+  /* background-position: top; */
   position: relative;
 }
 
 .logo-box {
+  display: inline-block;
   position: absolute;
-  top: 40px;
+  top: 15px;
   left: 40px;
 }
 
 .logo {
-  height: 35px;
+  height: 50px;
 }
 
 .heading-primary {
-  color: #26b7ca;
+  color: black;
 }
 
-.heading-primary-main {
+.heading-primary-main1 {
   display: block;
-  font-size: 50px;
-  font-weight: 400;
-  letter-spacing: 1px;
+  /* color: #27b34c !important; */
+  font-size: 67px;
+  font-weight: 900;
+  font-family: "Barlow" !important;
+  letter-spacing: -1px;
+  line-height: 0.7;
+  margin-bottom: 2rem;
+  /* height: 50; */
 }
 
 .heading-primary-sub {
   display: block;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 400;
+  font-family: "Barlow";
+  line-height: 1.3;
 }
 
 .text-box {
   position: absolute;
-  top: 30%;
-  left: 40px;
+  top: 25%;
+  left: 55px;
+  height: 100vh;
 }
 
 .btnAction {
-  text-transform: uppercase;
   padding: 13px 45px;
-  background-color: #ff7d5c;
-  color: white;
+  background-color: #27b34c;
+  color: black;
+  font-weight: bolder;
   border-radius: 25px;
   border: none;
   margin-top: 10px;
@@ -80,4 +102,108 @@ body {
 
 .btnAction:focus {
   outline: 0;
+}
+
+.image-box {
+  position: absolute;
+  top: 1%;
+  left: 10%;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.main-image {
+  height: 100%;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+}
+
+.option {
+  display: inline-block;
+  margin-right: 20px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.section-1-Container {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+  height: 90vh;
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+.section-1-header {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.section-1-title {
+  font-family: "Barlow";
+  font-weight: 900;
+  color: black;
+  font-size: 5rem;
+}
+
+.section-1-subTitle {
+  font-family: "Barlow";
+  font-size: 2rem;
+  font-weight: 900 !important;
+  letter-spacing: -1;
+}
+
+.small-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10rem;
+  text-align: center;
+}
+
+.grid-item {
+  font-size: 16px;
+  width: 30%;
+}
+
+.iconImage {
+  height: 10rem;
+  width: 6rem;
+  margin: auto;
+}
+
+.section-2-contaier {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  margin-top: 10rem;
+
+  /* font-family: "Barlow" !important; */
+}
+
+.section-2-textBox {
+  text-align: center;
+}
+
+.section-2-subTitle {
+  font-size: 3rem;
+  font-family: "Barlow";
+  font-weight: 900 !important;
+}
+
+.section-2-text {
+  margin: 2rem;
+}
+
+.section-3-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
