@@ -45,6 +45,17 @@ body {
   height: 50px;
 }
 
+.home-box {
+  position: absolute;
+  top: 19px;
+  left: 100px;
+}
+
+.home {
+  height: 30px;
+  opacity: 0;
+}
+
 .heading-primary {
   color: black;
 }
@@ -106,7 +117,7 @@ body {
 
 .image-box {
   position: absolute;
-  top: 1%;
+  top: 2%;
   left: 10%;
   height: 100%;
   width: 100%;
@@ -123,6 +134,10 @@ body {
   flex-flow: row wrap;
   /* This aligns items to the end line on main-axis */
   justify-content: flex-end;
+}
+
+.navigation:hover .home {
+  opacity: 0.5;
 }
 
 .option {
@@ -183,27 +198,44 @@ body {
   height: 80vh;
   width: 100%;
   display: flex;
-  margin-top: 10rem;
+  margin-top: 6rem;
 
   /* font-family: "Barlow" !important; */
 }
 
 .section-2-textBox {
-  text-align: center;
+  /* text-align: center; */
+  margin-top: 2rem;
 }
 
 .section-2-subTitle {
-  font-size: 3rem;
+  font-size: 5rem;
   font-family: "Barlow";
   font-weight: 900 !important;
+  position: relative;
+  left: 70%;
+  z-index: 1;
 }
 
 .section-2-text {
-  margin: 2rem;
+  margin: 4rem;
 }
 
 .section-3-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 6rem;
+}
+
+.section-3-subTitle {
+  font-family: "Barlow";
+  font-size: 5rem;
+  font-weight: 900;
+  position: relative;
+  right: 18%;
+}
+
+.section-3-text {
+  margin: 4rem;
 }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import logo from "./images/logo-green-1x.png";
+import home from "./images/home.svg";
 
 // const Navbar = () => {
 //   return (
@@ -28,6 +29,9 @@ class Navbar extends Component {
       <div className="navigation">
         <div className="logo-box">
           <img src={logo} className="logo" alt="logo" />
+        </div>
+        <div className="home-box">
+          <img src={home} className="home" />
         </div>
         <a className="option" href="#section-1">
           Option1

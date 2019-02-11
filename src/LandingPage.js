@@ -119,9 +119,9 @@ class LandingPage extends Component {
                   <Image src={enforcement} />
                 </Grid.Column>
                 <Grid.Column width={6}>
-                  <div className="section-2-textBox">
-                    <h1 className="section-2-subTitle">Enforcement</h1>
-                    <p className="section-2-text">
+                  <div className="section-3-textBox">
+                    <h1 className="section-3-subTitle">Enforcement</h1>
+                    <p className="section-3-text">
                       cases are perfectly simple and easy to distinguish. In a
                       free hour, when our power of choice is untrammelled and
                       when nothing prevents our being able to do what we like
